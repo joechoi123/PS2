@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="josep"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-27 12:28:50 PM"/>
+        <attribute name="created" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDItMjc7MTI6MjI6NDkgUE07Mjg2Nw=="/>
+        <attribute name="edited" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDItMjc7MTI6Mjg6NTAgUE07MTsyOTcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="CreditsAmnt" type="Real" array="False" size=""/>
+            <declare name="C" type="Real" array="False" size=""/>
+            <declare name="F" type="Real" array="False" size=""/>
+            <declare name="P" type="Real" array="False" size=""/>
+            <input variable="LastName"/>
+            <input variable="C"/>
+            <assign variable="F" expression="100"/>
+            <assign variable="P" expression="(C * 250) + F"/>
+            <output expression="LastName" newline="True"/>
+            <output expression="&quot;Tuition is  $&quot; &amp; P" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

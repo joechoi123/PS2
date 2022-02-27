@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="josep"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-27 02:51:46 PM"/>
+        <attribute name="created" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDItMjc7MTI6Mjg6NTEgUE07Mjg2Ng=="/>
+        <attribute name="edited" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDItMjc7MDI6NTE6NDYgUE07MjsyOTc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Item" type="Real" array="False" size=""/>
+            <declare name="Discount" type="Real" array="False" size=""/>
+            <declare name="DiscPer" type="Real" array="False" size=""/>
+            <declare name="P" type="Real" array="False" size=""/>
+            <declare name="n1" type="Real" array="False" size=""/>
+            <declare name="f" type="Real" array="False" size=""/>
+            <input variable="Item"/>
+            <input variable="Discount"/>
+            <assign variable="DiscPer" expression="(Discount * .01)"/>
+            <assign variable="n1" expression="(Item * DiscPer)"/>
+            <assign variable="f" expression="(Item - n1)"/>
+            <output expression="&quot;Discount is $&quot; &amp; n1" newline="True"/>
+            <output expression="&quot;Discount Price Is  &quot; &amp; f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
